@@ -92,4 +92,10 @@ class 7 - bind data con el componente
 
   desde el template tambien puedes llamar a las funciones que tenga el componente
 
+class 8 - tipos de variables que se pueden definir en los componentes
+
+  en el archivo component.ts se ven ejemplos de diferentes tipos de variables
+
+  se supone que cuando hay un tipo que no concuerda debería no compilar aunque esta version de angular al parecer si renderiza igual la vista.
+
 
