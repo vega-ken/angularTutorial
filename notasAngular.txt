@@ -28,7 +28,39 @@ clase 3 - typescript
     se le puede poner tipos de variables a funciones tambien y parametros
     *notar que no es obligado. pero ayuda a tener menos errores
 
-  
+clase 4 - components 
+
+  aplicaciones en angular : modules + services + components 
+
+  los componenetes hascen el codigo mas facil de mantener, mas organizado y mas facil de trabajra en equipos
+
+    partes el UI en varias partes
+
+  como se un componente en codigo
+
+    @Component({
+      selector: 'app-root',
+      templateUrl: './app.component.html',
+      styleUrls: ['./app.component.css']
+    })
+    export class AppComponent {
+      title = 'app';
+    }
+
+clase 5 - ngmodule
+
+  @NgModule({
+    declarations: [
+      AppComponent --> aqui iran todos los componenetes que se creen en la app 
+    ],
+    imports: [
+      BrowserModule --> http module, etc
+    ],
+    providers: [], --> services (ajax calls)
+    bootstrap: [AppComponent] --> es el primer componente que se va a cargar y los demas estan dentro
+  })
+  export class AppModule { }
+
 
   
   
