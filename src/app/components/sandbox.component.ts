@@ -1,32 +1,49 @@
 import { Component } from '@angular/core';
+import { Customer } from './Customer';
 
 @Component({
   selector: 'sandbox',
   template: `
-    <h1>Hello {{ name }}.</h1>
+    <h1>Hello World.</h1>
   `
 })
 
 export class SandboxComponent{ // tu clase debe hacer match con el nombre del archivo
-  name:string = 'John Doe';
-  age:number = 45;
-  hasChildren:boolean = true;
+  
+  customer : Customer;/*{ // en lugar de asignarse a esto, se asigna a la interface
+    id:number,
+    name:string,
+    email:string
+  }*/
 
-  city:any = 'Boston';
-  myNumbersArray:number[] = [1,2,3];
-  myStringsArray:string[] = ['hola', 'mundo'];
+  customers: Customer[];
 
-  myAnyArray:any[] = ['hello', 234];
+  constructor(){
+    this.customer = {
+      id : 35,
+      name : 'gg',
+      email : 'df'
+    }
 
-  myTuple: [string, number] = ['hello', 3]; // mas especifico
+    this.customers = [
+      {
+        id : 1,
+        name : 'gg',
+        email : 'df'
+      },
+      {
+        id : 2,
+        name : 're',
+        email : 'df'
+      },
+      {
+        id : 3,
+        name : 'gg',
+        email : 'df'
+      }
 
-  unusable:void = undefined;
-  u:undefined = undefined;
-  n:null = null; // o undefined;
-
-
-  constructor(){ // se ejecuta cuando el componente se incializa
-    this.myNumbersArray = [2,3];
+    ]
   }
-
 }
+
+// cuando tu objeto tiene muchisimos campos para rellenar

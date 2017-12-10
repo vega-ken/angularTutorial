@@ -98,4 +98,14 @@ class 8 - tipos de variables que se pueden definir en los componentes
 
   se supone que cuando hay un tipo que no concuerda debería no compilar aunque esta version de angular al parecer si renderiza igual la vista.
 
+class 9 - interfaces con objetos
+
+  cuando un objeto tiene muchos campos para rellenar ( ejm un usuario con muchos detalles )
+
+    se crea una interface que puede estar en un archivo externo y luego importarlo
+
+    de la interface puedes crear hasta arreglos.
+
+    se puede usar para modelar la data que tienes
+
 
