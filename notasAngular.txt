@@ -131,4 +131,15 @@ class 13 - enlace de propiedades de componentes
       <div><img [src]="imageUrl" alt=""></div>
       <div><img bind-src="imageUrl" alt=""></div>
 
+class 14 - ngClass
+
+  permite asignar clases dinamicamente
+
+  puedes asignar mas de una clase haciendo que una propiedad sea un objeto y tenga varias propiedades boolean que al final son variables que deciden que clases están activas  y cuales no
+
+    <h4 [class.special2]="isSpecial">This class binding is special</h4>
+
+    <h4 [ngClass]="currentClasses">This heading is initially special and saveable</h4>
+
+  
     

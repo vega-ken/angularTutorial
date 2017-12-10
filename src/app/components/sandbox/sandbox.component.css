@@ -1,3 +1,11 @@
 .special {
   color: blue;
 }
+
+.special2 {
+  color : green;
+}
+
+.saveable {
+  text-transform: uppercase;
+}
