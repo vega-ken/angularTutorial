@@ -61,6 +61,21 @@ clase 5 - ngmodule
   })
   export class AppModule { }
 
+class 6 - creando componentes
+
+  creas la carpeta components dentro de app (esto es de manera manual o lo puede hacer con el CLI)
+    ahí viven tus archivos 
+
+      import { Component } from '@angular/core';
+
+      @Component({ // --> cuidado ahí con dejar un espacio entre el decorator y el parentesis
+        selector: 'sandbox',
+        template: `<h1>Hello World</h1>`
+      })
+
+      export class SandboxComponent{ // tu clase debe hacer match con el nombre del archivo
+
+      }
 
   
   

@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 // cada componente creado tendra que estar aqui
 import { AppComponent } from './app.component';
+import { SandboxComponent } from './components/sandbox.component'; // cuando sean varios componentes /components/sandbox/sandbox.component
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SandboxComponent
   ],
   imports: [
     BrowserModule
