@@ -1,13 +1,30 @@
 <h1 class="special">Hello World from the HTML file.</h1>
-{{people}}
-<ul>
-  <li *ngFor="let person of people; let i = index">
-    {{i+1}}: {{person}}
-  </li>
-</ul>
 
-<ul>
-  <li *ngFor="let person of people2; let i = index">
-    {{i+1}}: {{person.firstName}} - {{person.lastName}}
-  </li>
-</ul>
+<h2>
+  Hello 
+  <!--
+  <span *ngIf="showName">{{name}}</span>
+  <span *ngIf="!showName">World</span>
+  -->
+  <span *ngIf="showName; else noName">{{name}}</span>
+  <ng-template #noName>World</ng-template>
+
+  <p>Hello {{ showName ? name : 'World' }}</p>
+
+  <hr>
+
+  <div [ngSwitch]="greeting">
+    <div *ngSwitchCase="'1'">
+      Hello World
+    </div>
+    <div *ngSwitchCase="'2'">
+      Hi there
+    </div>
+    <div *ngSwitchCase="'3'">
+      What's up
+    </div>
+    <div *ngSwitchDefault>
+      Hello recruiter
+    </div>
+  </div>
+</h2>

@@ -9,29 +9,9 @@ import { Component } from '@angular/core';
 
 export class SandboxComponent { // tu clase debe hacer match con el nombre del archivo
 
-  people = ['Rick', 'Daryl', 'Carl', 'Glen'];
+  name:string = 'John Doe';
+  showName:boolean = true;
 
-  people2 = [ 
-    {
-      firstName: 'Rick',
-      lastName: 'Grimes'
-    },
-    {
-      firstName: 'Daryl',
-      lastName: 'Dixon'
-    },
-    {
-      firstName: 'Carl',
-      lastName: 'Grimes'
-    },
-    {
-      firstName: 'Glen',
-      lastName: 'Rhee'
-    }
-  ];
-
-  constructor(){
-    this.people[2] = 'Carol';
-  }
+  greeting:number = 2;
 
 }
