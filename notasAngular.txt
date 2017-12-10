@@ -113,3 +113,7 @@ class 9 - interfaces con objetos
 class 10 - template files
 
   puedes poner archivos HTML y CSS linkeados a tu componente de manera externa con las propiedades adecuadas
+
+class 11 - for loops en templates
+
+  como handlebars. solo tienes que declarar las variables en el componente y luego puedes acceder a ellas casi igual como lo haces con handlebars.
