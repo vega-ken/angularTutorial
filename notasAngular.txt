@@ -77,7 +77,19 @@ class 6 - creando componentes
 
       }
 
+  luego agregas el componente al ngmodule
+
+class 7 - bind data con el componente
+
+  puedes crear propiedaes en tu componente y luego ponerlas en tu propio html de ese componente
+    las propiedades las creas en la clase del componente
   
-  
+  string interpolation : {{name}}
+
+  se definen las propiedades de un componente sin los keywords let ni const ni var
+
+    puedes definir strings, numeros, objetos, el contructor, otros metodos
+
+  desde el template tambien puedes llamar a las funciones que tenga el componente
 
 
