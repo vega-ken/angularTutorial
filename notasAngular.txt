@@ -108,4 +108,8 @@ class 9 - interfaces con objetos
 
     se puede usar para modelar la data que tienes
 
+-- section 4 --
 
+class 10 - template files
+
+  puedes poner archivos HTML y CSS linkeados a tu componente de manera externa con las propiedades adecuadas
