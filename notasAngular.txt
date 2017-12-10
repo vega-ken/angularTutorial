@@ -1,0 +1,36 @@
+clase 1 - viendo los archivos de una aplicacion con angular
+
+  approot es un ejemplo de custom directive
+
+  los ts files son transformados a archivos js
+
+  en app.component.ts se incluye el html 
+
+  para los componentes normalmente se crea una carpeta aparte para cada uno
+
+  src/app es lo que al final es la fuente para crear el codigo de distribucion
+
+  la carpeta enviroments te permite setear keys para producion y para desarrollo distintas
+
+clase 2 - instalacion a traves de quickstart ( no con el CLI )
+
+  te lo descargas de aqui https://github.com/angular/quickstart
+
+    descomprimes y pegas y npm install 
+
+  ya que el CLI usa webpack, no tiene que incluir unas cosas que el quickstart incluye en el html
+
+clase 3 - typescript
+
+  typescript es javascript con mas funcinalidades
+
+  puedes poner tipos de variables ahora como strings, numbers ,etc 
+    se le puede poner tipos de variables a funciones tambien y parametros
+    *notar que no es obligado. pero ayuda a tener menos errores
+
+  
+
+  
+  
+
+
