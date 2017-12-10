@@ -9,9 +9,6 @@ import { Component } from '@angular/core';
 
 export class SandboxComponent { // tu clase debe hacer match con el nombre del archivo
 
-  name:string = 'John Doe';
-  showName:boolean = true;
-
-  greeting:number = 2;
-
+  imageUrl:string = 'http://lorempixel.com/400/200';
+  isUnchanged:boolean = false;
 }

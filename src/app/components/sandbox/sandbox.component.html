@@ -1,30 +1,14 @@
 <h1 class="special">Hello World from the HTML file.</h1>
 
-<h2>
-  Hello 
-  <!--
-  <span *ngIf="showName">{{name}}</span>
-  <span *ngIf="!showName">World</span>
-  -->
-  <span *ngIf="showName; else noName">{{name}}</span>
-  <ng-template #noName>World</ng-template>
+<!-- 3 maneras de enlazar propiedades -->
+<!--<div><img src="{{imageUrl}}" alt=""></div>
+<div><img [src]="imageUrl" alt=""></div>
+<div><img bind-src="imageUrl" alt=""></div>
+-->
+<h4>Image Location: <span [textContent]="imageUrl"></span></h4>
 
-  <p>Hello {{ showName ? name : 'World' }}</p>
+<hr>
 
-  <hr>
-
-  <div [ngSwitch]="greeting">
-    <div *ngSwitchCase="'1'">
-      Hello World
-    </div>
-    <div *ngSwitchCase="'2'">
-      Hi there
-    </div>
-    <div *ngSwitchCase="'3'">
-      What's up
-    </div>
-    <div *ngSwitchDefault>
-      Hello recruiter
-    </div>
-  </div>
-</h2>
+<h2>Create Post</h2>
+<p [hidden]="isUnchanged">Post have been changed, please save changes</p>
+<button [disabled]="isUnchanged">save</button>

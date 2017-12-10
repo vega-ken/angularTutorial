@@ -121,3 +121,14 @@ class 11 - for loops en templates - ngFor directive
 class 12 - ngIf y ngSwitch
 
   hay nuevas formas en el html del componente para hacer ifs y switchs
+
+class 13 - enlace de propiedades de componentes
+
+  * se renderiza el UI dependiendo de las propiedaes que los componentes llevan
+
+    <!-- 3 maneras de enlazar propiedades -->
+      <div><img src="{{imageUrl}}" alt=""></div>
+      <div><img [src]="imageUrl" alt=""></div>
+      <div><img bind-src="imageUrl" alt=""></div>
+
+    
