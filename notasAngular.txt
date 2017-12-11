@@ -166,3 +166,19 @@ class 18 - cambiando propiedades de componentes a traves de eventos
     en el ejm de esta leccion se saca un elemento si es que un valor del componente es falso
 
     notar que el elemento desaparece literal (no es que se ponga en visibility: hidden)
+
+class 19 - cambiando propiedades de componentes a través de eventos parte 2 : eventos de teclado
+
+  lo mismo pero con eventos de teclado: 
+    ejm en el html
+      <div>
+        <label for="">Evento keyUp :</label>
+        <br>
+        <input type="text" (keyup)="fireEvent($event)">
+      </div>
+    en la clase del componente
+      fireEvent(e){
+        console.log(e.type)
+      }
+
+  tambien se ve como hacer one way data binding pero es mejor usar el ngModule para eso

@@ -1,8 +1,55 @@
 <h1 class="special">Hello World from the HTML file.</h1>
 
-<button (click)="changeValue()">Toggling text</button>
+<div>
+  <label for="">Evento keyUp :</label>
+  <br>
+  <input type="text" (keyup)="fireEvent($event)">
+</div>
+<br>
 
-<div *ngIf="value">
-  <h2>{{text}}</h2>
+<div>
+  <label for="">Evento keyDown :</label>
+  <br>
+  <input type="text" (keydown)="fireEvent($event)">
+</div>
+<br>
+
+<div>
+  <label for="">Evento Focus :</label>
+  <br>
+  <input type="text" (focus)="fireEvent($event)">
+</div>
+<br>
+
+<div>
+  <label for="">Evento blur :</label>
+  <br>
+  <input type="text" (blur)="fireEvent($event)">
+</div>
+<br>
+
+<div>
+  <label for="">Evento cut :</label>
+  <br>
+  <input type="text" (cut)="fireEvent($event)">
+</div>
+<hr>
+
+<div>
+  <label for="">Change Text (one way data biding):</label>
+  <br>
+  <input type="text" (keyup)="changeText($event)">
 </div>
 
+<h2> {{text}} </h2>
+<hr>
+
+<div>
+  <label for="">Change Text (two way data biding):</label>
+  <br>
+  <input type="text" (keyup)="changeText($event)" value="{{text}}">
+</div>
+
+<h2> {{text}} </h2>
+
+<!-- otros eventos, 'copy' , 'paste' -->

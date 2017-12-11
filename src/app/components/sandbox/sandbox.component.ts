@@ -9,12 +9,13 @@ import { Component } from '@angular/core';
 
 export class SandboxComponent { // tu clase debe hacer match con el nombre del archivo
   
-  text:string = 'Hello world';
-  value:boolean = true;
+  text:string = "Hello";
 
-  changeValue(){
-    //this.value = false;
-    this.value = !this.value; // for toogling
+  fireEvent(e){
+    console.log(e.type)
   }
  
+  changeText(e){
+    this.text = e.target.value;
+  }
 }
