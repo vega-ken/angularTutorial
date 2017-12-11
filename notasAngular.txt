@@ -143,5 +143,10 @@ class 14 - ngClass
 
     <h4 [ngClass]="currentClasses">This heading is initially special and saveable</h4>
 
-  
-    
+class 15 - enlazando estilos y ngStyle
+
+  puedes tambien en base a las propiedades de un componente decidir qu eestilos aplicar a un elemento en el UI
+
+    <div [style.font-size]="isSpecial ? 'x-large' : 'smaller'">Font size depends on isSpecial</div>
+
+  con ngstyle puedes crear una propiedad en tu componente que sea un objeto que tenga propiedades cambiantes y luego asignarlo a un elemento (de modo que agregas varias clases cambiantes en base a propiedades)
