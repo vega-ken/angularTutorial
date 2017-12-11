@@ -182,3 +182,14 @@ class 19 - cambiando propiedades de componentes a través de eventos parte 2 : e
       }
 
   tambien se ve como hacer one way data binding pero es mejor usar el ngModule para eso
+
+class 20 - ngModule
+
+  lo usas para hacer two way data binding : que significa que 2 campos están enlazados (si afectas a uno el otro se ve afectado)
+
+  no olvides que cuando es two way data binding se usa [(ngModule)]
+
+  y tampoco olvides que si estás en un input tienes que darle al atributo name el mismo valor que le das a [(ngModule)]
+    ver ejemplo en html del componente para que quede más claro
+
+  *importante. en esta clase se importa el FormsModule al app.module.ts
