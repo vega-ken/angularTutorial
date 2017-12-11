@@ -9,7 +9,11 @@ import { Component } from '@angular/core';
 
 export class SandboxComponent { // tu clase debe hacer match con el nombre del archivo
   
-  birthday = new Date(1981, 1, 15);
-  total = 500;
-  fee = 0.5;
+  fireEvent(e , greeting){
+    console.log('event ocurred!');
+    console.log(e.currentTarget);
+    console.log(e.target);
+    console.log(e.type);
+    console.log(greeting);
+  }
 }

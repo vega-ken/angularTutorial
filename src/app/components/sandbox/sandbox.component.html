@@ -1,14 +1,7 @@
 <h1 class="special">Hello World from the HTML file.</h1>
 
-<p>My birthday is {{ birthday }}</p>
-<p>My birthday is {{ birthday | date }}</p>
-<p>My birthday is {{ birthday | date | uppercase }}</p>
-<p>My birthday is {{ birthday | date:"MM-dd-yyyy" }}</p>
-<p>My birthday is {{ birthday | date:"yyyy" }}</p>
+<button (click)="fireEvent($event , 'Hello')">Click Event</button>
 
-<p>I love {{ 'cake' | uppercase }}</p>
-<p>I hate {{ 'CATS' | lowercase }}</p>
+<button (mouseover)="fireEvent($event , 'Hello')">MouseOver Event</button>
 
-<p>Your total is {{ total | currency:"GBP":"1" }}</p>
-
-<p>Our fee is  {{ fee | percent }}</p>
+<button (dlbclick)="fireEvent($event , 'Hello')">dlbclick Event</button>

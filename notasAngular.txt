@@ -154,3 +154,8 @@ class 15 - enlazando estilos y ngStyle
 class 16 - pipes
 
   cuando pasas informacion así como se hacia con handlebars, puedes tambien dar algunos parametros para cambiar esa infomacion. ejemplos en el html del componente.
+
+class 17 - mouse events
+
+  angular tiene su propia manera de enlazar eventos con los elementos del HTML
+    ver ejemplos el html del componente. al final se convierten en funciones que programas en el componente en sí
