@@ -1,17 +1,44 @@
 import { Injectable } from '@angular/core';
 
+import { Observable } from 'rxjs/Observable';
+import { setTimeout } from 'timers';
+
 @Injectable()
 
 export class DataService{
-  //para usar este servicio se necesita agregarlo a app.module.ts
-  users:string[];
+  
+  data: Observable<Array<number>>;
 
   constructor(){
-    this.users = ['Mark', 'Shaun', 'Beth', 'John'];
+    
   }
 
-  getUsers(){
-    return this.users;
+  getData(){
+    this.data = new Observable(observer => {
+      setTimeout(() => {
+        observer.next(1);
+      }, 1000);
+
+      setTimeout(() => {
+        observer.next(2);
+      }, 2000);
+
+      setTimeout(() => {
+        observer.next(3);
+      }, 3000);
+
+      setTimeout(() => {
+        observer.next('hello');
+      }, 4000);
+
+      setTimeout(() => {
+        observer.complete();
+      }, 5000);
+    });
+
+    return this.data;
+    
   }
+
 }
 

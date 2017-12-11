@@ -237,4 +237,8 @@ class 21 - services y creacion de uno
 
     notar que se tiene que cambiar el app.module.ts
 
-  
+class 22 - observables
+
+  se crea un observable en el servicio y se envia data al componente que la usa pero la envia en un data stream
+
+  la idea es que desde el observable puedas tener algunas propiedades que cambien y se las puedas enviar a tu componente. luego tu componente se encarga de actualizar esa data en el UI directamente
