@@ -159,3 +159,10 @@ class 17 - mouse events
 
   angular tiene su propia manera de enlazar eventos con los elementos del HTML
     ver ejemplos el html del componente. al final se convierten en funciones que programas en el componente en sí
+
+class 18 - cambiando propiedades de componentes a traves de eventos
+
+  se pueden cambiar propiedaes de los componentes al recibir eventos del UI
+    en el ejm de esta leccion se saca un elemento si es que un valor del componente es falso
+
+    notar que el elemento desaparece literal (no es que se ponga en visibility: hidden)

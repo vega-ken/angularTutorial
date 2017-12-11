@@ -1,7 +1,8 @@
 <h1 class="special">Hello World from the HTML file.</h1>
 
-<button (click)="fireEvent($event , 'Hello')">Click Event</button>
+<button (click)="changeValue()">Toggling text</button>
 
-<button (mouseover)="fireEvent($event , 'Hello')">MouseOver Event</button>
+<div *ngIf="value">
+  <h2>{{text}}</h2>
+</div>
 
-<button (dlbclick)="fireEvent($event , 'Hello')">dlbclick Event</button>
