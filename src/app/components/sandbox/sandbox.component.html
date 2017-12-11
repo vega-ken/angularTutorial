@@ -1,5 +1,14 @@
 <h1 class="special">Hello World from the HTML file.</h1>
 
-<div [style.font-size]="isSpecial ? 'x-large' : 'smaller'">Font size depends on isSpecial</div>
+<p>My birthday is {{ birthday }}</p>
+<p>My birthday is {{ birthday | date }}</p>
+<p>My birthday is {{ birthday | date | uppercase }}</p>
+<p>My birthday is {{ birthday | date:"MM-dd-yyyy" }}</p>
+<p>My birthday is {{ birthday | date:"yyyy" }}</p>
 
-<div [ngStyle]="currentStyles">This div is initially saveable & special</div>
+<p>I love {{ 'cake' | uppercase }}</p>
+<p>I hate {{ 'CATS' | lowercase }}</p>
+
+<p>Your total is {{ total | currency:"GBP":"1" }}</p>
+
+<p>Our fee is  {{ fee | percent }}</p>

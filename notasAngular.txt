@@ -150,3 +150,7 @@ class 15 - enlazando estilos y ngStyle
     <div [style.font-size]="isSpecial ? 'x-large' : 'smaller'">Font size depends on isSpecial</div>
 
   con ngstyle puedes crear una propiedad en tu componente que sea un objeto que tenga propiedades cambiantes y luego asignarlo a un elemento (de modo que agregas varias clases cambiantes en base a propiedades)
+
+class 16 - pipes
+
+  cuando pasas informacion así como se hacia con handlebars, puedes tambien dar algunos parametros para cambiar esa infomacion. ejemplos en el html del componente.
