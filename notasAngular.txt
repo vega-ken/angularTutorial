@@ -208,7 +208,15 @@ class 21 - submission of forms!
 
       para hacer esto en vanilla JS me hubiese tardado mucho más. aquí es donde veo que se ve la ventaja de usar el framework Angular
 
-class 22 - validacion de forms
+class 22 - validacion de forms y submission
 
  hasta ahora se ve como se validan los forms sin necesidad de la validacion por default que trae HTML5
- 
+
+ ngSubmit evita que se haga el post como normalmente se haria (es como el e.preventDefault creo)
+
+ https://angular.io/guide/form-validation
+
+ https://angular.io/guide/template-syntax#safe-navigation-operator - explica el operador '?'
+  
+  la idea es que no haya errores en la vista cuando no existe una referencia a lo que se está llamando
+

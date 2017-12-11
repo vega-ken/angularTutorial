@@ -1,7 +1,7 @@
 <h1 class="special">Hello World from the HTML file.</h1>
 
 <div class="container">
-  <form novalidate #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <form novalidate #f="ngForm" (ngSubmit)="onSubmit(f)"> <!-- darse cuenta que se pasa el form(con id de 'f') en la funcion. esto pasa el form submitted como objeto y su validacion -->
     <div class="form-group">
       <label>Name</label>
       <input
