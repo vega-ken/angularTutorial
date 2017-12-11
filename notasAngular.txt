@@ -186,6 +186,7 @@ class 19 - cambiando propiedades de componentes a través de eventos parte 2 : e
 class 20 - ngModel
 
   lo usas para hacer two way data binding : que significa que 2 campos están enlazados (si afectas a uno el otro se ve afectado)
+    *lo que se hace es enlazar propiedades del componente a campos del UI. cuando se afecta por dentro la propiedad del componente se puede ver que eso cambia el UI. y viceversa
 
   no olvides que cuando es two way data binding se usa [(ngModel)]
 
@@ -193,3 +194,14 @@ class 20 - ngModel
     ver ejemplo en html del componente para que quede más claro
 
   *importante. en esta clase se importa el FormsModule al app.module.ts y además se agrega bootstrap 4
+
+class 21 - submission of forms!
+
+  *importante* esta clase es la más útil entre todas
+
+    muestra como puedes usar el two way data binding para poder hacer lo siguiente
+
+      usar la informacion ingresada en un input y agregarla a un arreglo que esta como propiedad de un componente
+      ver que cuando usas ngFor de una propiedad de un componente y esta cambia, se actualiza en el UI
+      poder actualizar la propiedad de un componente para actualizarla en el form de modo que se tenga mejor UX
+        me refiero al borrado de lo que se escribio en el input para poder escribir otra data

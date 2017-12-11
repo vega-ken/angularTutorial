@@ -10,7 +10,11 @@ import { Component } from '@angular/core';
 export class SandboxComponent { // tu clase debe hacer match con el nombre del archivo
   
   name:string = "";
+  users:string[] = ['Jhon doe', 'Marie Jane', 'Smith smith'];
 
-  age:number = 0;
+  onSubmit(){ // evento lanzado por el form
+    this.users.push(this.name);
+    this.name = ""; // como esta propiedad esta enlazada con el UI, ya no tienes que llegar al elemento del html. solo cambiar la propiedad!
+  }
 
 }
