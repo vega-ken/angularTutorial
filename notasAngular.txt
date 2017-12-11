@@ -1,3 +1,5 @@
+recuerda que la app la compilas con "ng serve"
+
 clase 1 - viendo los archivos de una aplicacion con angular
 
   approot es un ejemplo de custom directive
