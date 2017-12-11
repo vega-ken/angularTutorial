@@ -5,18 +5,18 @@ import { FormsModule } from '@angular/forms';
 // cada componente creado tendra que estar aqui
 import { AppComponent } from './app.component';
 import { SandboxComponent } from './components/sandbox/sandbox.component'; // cuando sean varios componentes /components/sandbox/sandbox.component
-
+import { DataService } from './services/data.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SandboxComponent
+    SandboxComponent // componentes van en declarations
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DataService], // servicios van en providers
   bootstrap: [AppComponent]
 })
 export class AppModule { }
