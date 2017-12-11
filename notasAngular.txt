@@ -205,3 +205,10 @@ class 21 - submission of forms!
       ver que cuando usas ngFor de una propiedad de un componente y esta cambia, se actualiza en el UI
       poder actualizar la propiedad de un componente para actualizarla en el form de modo que se tenga mejor UX
         me refiero al borrado de lo que se escribio en el input para poder escribir otra data
+
+      para hacer esto en vanilla JS me hubiese tardado mucho más. aquí es donde veo que se ve la ventaja de usar el framework Angular
+
+class 22 - validacion de forms
+
+ hasta ahora se ve como se validan los forms sin necesidad de la validacion por default que trae HTML5
+ 
