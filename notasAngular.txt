@@ -252,3 +252,8 @@ class 23 - httpmodule - GET
 
     lo traes como servicio y luego lo usa tu componente. lo agregas a una propiedad y luego lo muestras con un ngfor por ejemplo
 
+class 24 - httpmodule post
+
+  post se trabaja de la misma manera. de verdad que ahorra bastantes lineas de codigo
+
+    solo recuerda mapearlo a json al final para poder usarlo en el UI

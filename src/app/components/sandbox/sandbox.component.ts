@@ -13,10 +13,23 @@ export class SandboxComponent { // tu clase debe hacer match con el nombre del a
   
   users:any[] = [];
 
+  user = {
+    name : '',
+    email : '',
+    phone : ''
+  }
+
   constructor(public dataService:DataService){
     this.dataService.getUsers().subscribe(users => {
       //console.log(users);
       this.users = users;
     });
+  }
+
+  onSubmit(){
+    this.dataService.addUser(this.user).subscribe(user => {
+      console.log(user);
+      this.users.unshift(user); // unshift es como push, pero lo agrega al inicio
+    })
   }
 }
