@@ -1,7 +1,17 @@
 <h1 class="special">Hello World from the HTML file.</h1>
 
 <div class="container">
-  <ul class="list-group">
-    <li class="list-group-item" *ngFor="let d of dataArray">{{d}}</li>
-  </ul>
+  <div class="card" style="width: 20rem;" *ngFor="let user of users">
+    <div class="card-body">
+      <h4 class="card-title">{{user.name}}</h4>
+      <!--<p class="card-text">Email : {{user.email}}</p>-->
+      <ul class="list-group">
+        <li class="list-group-item">Email : {{user.email}}</li>
+        <li class="list-group-item">Phone : {{user.phone}}</li>
+        <li class="list-group-item">Website : {{user.website}}</li>
+      </ul>
+      <br>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
 </div>

@@ -242,3 +242,13 @@ class 22 - observables
   se crea un observable en el servicio y se envia data al componente que la usa pero la envia en un data stream
 
   la idea es que desde el observable puedas tener algunas propiedades que cambien y se las puedas enviar a tu componente. luego tu componente se encarga de actualizar esa data en el UI directamente
+
+class 23 - httpmodule - GET
+
+  como cualquier modulo tienes que agregarlo en app.module.ts
+    modulos van en imports. luego de agregarlo ya puedes usarlo
+
+  la idea es que puedes obtener data de un API con mucho menos código y ya no necesitas jquery por ejemplo para usar AJAX o usar XMLHTTPrequest
+
+    lo traes como servicio y luego lo usa tu componente. lo agregas a una propiedad y luego lo muestras con un ngfor por ejemplo
+

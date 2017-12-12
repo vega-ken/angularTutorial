@@ -11,12 +11,12 @@ import { DataService } from '../../services/data.service';
 
 export class SandboxComponent { // tu clase debe hacer match con el nombre del archivo
   
-  dataArray:any[] = [];
+  users:any[] = [];
 
   constructor(public dataService:DataService){
-    this.dataService.getData().subscribe(data => {
-      //console.log(data);
-      this.dataArray.push(data);
+    this.dataService.getUsers().subscribe(users => {
+      //console.log(users);
+      this.users = users;
     });
   }
 }

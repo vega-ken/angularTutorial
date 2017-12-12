@@ -1,43 +1,19 @@
 import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
 
-import { Observable } from 'rxjs/Observable';
-import { setTimeout } from 'timers';
+import 'rxjs/add/operator/map'; // para poder retornar la data como observable
 
 @Injectable()
 
 export class DataService{
-  
-  data: Observable<Array<number>>;
 
-  constructor(){
-    
+  constructor(public http:Http){
+
   }
 
-  getData(){
-    this.data = new Observable(observer => {
-      setTimeout(() => {
-        observer.next(1);
-      }, 1000);
-
-      setTimeout(() => {
-        observer.next(2);
-      }, 2000);
-
-      setTimeout(() => {
-        observer.next(3);
-      }, 3000);
-
-      setTimeout(() => {
-        observer.next('hello');
-      }, 4000);
-
-      setTimeout(() => {
-        observer.complete();
-      }, 5000);
-    });
-
-    return this.data;
-    
+  getUsers(){
+    return this.http.get('http://jsonplaceholder.typicode.com/users') // esto reemplaza a AJAX y XMLHTTPRequest
+      .map(res => res.json());
   }
 
 }
